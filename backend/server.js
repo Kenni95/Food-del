@@ -3,18 +3,14 @@ import cors from 'cors'
 import { connectDB } from './config/db.js'
 import foodRouter from './routes/FoodRoute.js'
 import userRouter from './routes/userRoute.js' 
-import dotenv from 'dotenv'
+import 'dotenv/config.js'
 import cartRouter from './routes/cartRoute.js'
 import orderRouter from './routes/orderRoute.js'
-
-// Load environment variables
-const result = dotenv.config();
-if (result.error) { console.error("Error loading .env file:", result.error); process.exit(1); }
 
  
 //app config
 const app = express()
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000
 
 //Middleware
 app.use(express.json())
