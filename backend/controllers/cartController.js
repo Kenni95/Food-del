@@ -1,4 +1,3 @@
-import { message } from 'antd';
 import userModel from '../models/userModel.js'
 
 // add items to user cart
@@ -49,5 +48,6 @@ const getCart = async (req,res) => {
     res.json({success:false,message:"Error"})
   }
 }
+
 
 export {addToCart, removeFromCart, getCart}
