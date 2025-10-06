@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import { connectDB } from './config/db.js'
-import foodRouter from './routes/FoodRoute.js'
+import foodRouter from './routes/foodRoute.js'
 import userRouter from './routes/userRoute.js' 
 import 'dotenv/config.js'
 import cartRouter from './routes/cartRoute.js'
@@ -32,4 +32,5 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
   console.log(`Server Started on http://localhost:${port}`)
+
 })
