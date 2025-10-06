@@ -1,5 +1,5 @@
 import React from 'react'
-import headerImg from '../assets/header_img.png';
+import headerImg from '../../assets/header_img.png';
 import './Header.css'
 
 const Header = () => {
@@ -20,4 +20,5 @@ const Header = () => {
 }
 
 export default Header
+
 
