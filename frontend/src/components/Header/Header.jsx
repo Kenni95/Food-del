@@ -1,9 +1,15 @@
 import React from 'react'
+import headerImg from '../assets/header_img.png';
 import './Header.css'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div  className="header"
+  style={{
+    backgroundImage: `url(${headerImg})`,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+  }}>
       <div className="header-contents">
         <h2>Order your favourite food here</h2>
         <p>Choose from a diverse menu faturing a delectable array of dishes crafted with the finest ingridients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
@@ -14,3 +20,4 @@ const Header = () => {
 }
 
 export default Header
+
