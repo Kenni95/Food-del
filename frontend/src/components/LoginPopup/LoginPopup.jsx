@@ -2,7 +2,6 @@ import React from 'react'
 import './LoginPopup.css'
 import { useState } from 'react'
 import { assets } from '../../assets/assets'
-import Password from 'antd/es/input/Password'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import axios from 'axios'
@@ -92,3 +91,4 @@ const LoginPopup = ({setShowLogin}) => {
 }
 
 export default LoginPopup
+
